@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NFT RedZone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --blue: #03326e;
+            --red: #c11e2eab;
+            --gren: rgba(33, 202, 41, 0.822);
+        }
+
+        @font-face {
+            font-family: azonix;
+            src: url('fonts/azonix.otf');
+        }
+        html{
+            scroll-behavior: smooth!important;
+        }
+
+        .inter {
+            font-family: 'inter';
+            font-weight: 800;
+            color: var(--blue);
+        }
+
+        .button-red {
+            background-color: var(--red);
+            color: white;
+        }
+
+        .button-primary {
+            background-color: var(--blue);
+            color: white;
+        }
+
+        .w-80 {
+            max-width: 18rem !important;
+            margin: auto;
+        }
+
+        .brand img{
+            width: 8rem;
+        }
+
+        .mx-auto {
+            margin: auto;
+        }
+        .tiles-item{
+            cursor: pointer;
+        }
+        .tiles-item:hover{
+            box-shadow:0 32px 64px rgba(24,35,52,0.24);
+        }
+       .team-item-image{
+           height: 300px;
+        }
+        .team-item-image img{
+            object-position: center;
+            object-fit: cover;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .team-item-name{
+            font-family: 'inter';
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+        @media only screen and (min-width:1280px) {
+            .container:first-child {
+                max-width: 1300px !important;
+                margin: auto;
+            }
+
+            .inter {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner mt-24">
+                    <div class="brand">
+                        <h1 class="m-0"><a href="index.html"><img src="../assets/Logo.png" alt="Twist"></a></h1>
+                    </div><button id="header-nav-toggle" class="header-nav-toggle" aria-controls="primary-menu"
+                        aria-expanded="false"><span class="screen-reader">Menu</span> <span class="hamburger"><span
+                                class="hamburger-inner"></span></span></button>
+                    <nav id="header-nav" class="header-nav">
+                        <div class="header-nav-inner">
+
+                            <ul class="list-reset text-xxs header-nav-right">
+                                <li><a href="#prizes">Weekly Prizes</a></li>
+                            </ul>
+                            <ul class="list-reset text-xxs header-nav-right">
+                                <li><a href="#cards">Cards/Mint</a></li>
+                            </ul>
+                            <ul class="list-reset text-xxs header-nav-right">
+                                <li><a href="#roadmap">Roadmap</a></li>
+                            </ul>
+                            <ul class="list-reset text-xxs header-nav-right">
+                                <li><a href="#league">League</a></li>
+                            </ul>
+                            <ul class="list-reset text-xxs header-nav-right">
+                                <li><a href="#front">Front Office</a></li>
+                            </ul>
+                            <ul class="list-reset text-xxs header-nav-right">
+                                <li><a href="#faq">FAQs</a></li>
+                            </ul>
+                            <ul class="list-reset header-nav-right">
+                                <li><a class="button button-primary button-wide-mobile button-sm"
+                                        href="#">Sign up</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="site-content">
+          
+
+            <section class="hero section illustration-section-01">
+                <div class="container">
+                    <div class="hero-inner section-inner pb-0">
+                        <div class="split-wrap">
+                            <div class="split-item">
+                                <div class="hero-content split-item-content center-content-mobile">
+                                    <h1 class="mt-20 mb-16 reveal-from-left inter">Welcome</h1>
+                                    <p class="m-0 mb-24 reveal-from-left" data-reveal-delay="200">Our goal is to create
+                                        the largest NFT fantasy league in history! Our league is comprised of 16 teams
+                                        each representing some of the best NFT projects and each led by one of their
+                                        community leaders. With 97% of our sale proceeds going back to buy NFT prizes
+                                        for our card holders this will be a positive EV NFT you’ll want to hold! Prizes
+                                        will vary week to week but upon full sell out we will be giving away in excess
+                                        of 1200 NFT prizes during the season. The card holder of the winner of our
+                                        championship matchup will be getting a Bored Ape!</p>
+                                    <div class="reveal-from-left" data-reveal-delay="400"><a
+                                            class="button button-primary button-wide-mobile" href="#">Get started</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="hero-figure is-3d split-item-image split-item-image-fill illustration-element-01 reveal-scale-up">
+                                    <img src="images/hero-image.svg" alt="Hero image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features-tiles section center-content-mobile">
+                <div class="container">
+                    <div class="features-tiles-inner section-inner">
+                        <div class="section-header center-content">
+                            <div class="container-xs">
+                                <h2 class="mt-0 mb-16 inter">How it Works?</h2>
+                            </div>
+                        </div>
+                        <div class="tiles-wrap">
+                            <div class="tiles-item">
+                                <div class="tiles-item-inner">
+                                    <!-- <div class="features-tiles-item-header">
+                                        <div class="features-tiles-item-image mb-12 reveal-from-right"
+                                            data-reveal-container=".tiles-item"><img
+                                                src="images/feature-tile-icon-01.svg" alt="Feature tile icon 01"></div>
+                                    </div> -->
+                                    <div class="features-tiles-item-content">
+                                        <h4 class="mt-0 mb-8 reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="100">16 Types</h4>
+                                        <p class="m-0 text-sm reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="200">We will be selling 16 types of trading cards each one representing one of the teams in our league</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item">
+                                <div class="tiles-item-inner">
+                                    <!-- <div class="features-tiles-item-header">
+                                        <div class="features-tiles-item-image mb-12 reveal-from-right"
+                                            data-reveal-container=".tiles-item" data-reveal-delay="100"><img
+                                                src="images/feature-tile-icon-02.svg" alt="Feature tile icon 02"></div>
+                                    </div> -->
+                                    <div class="features-tiles-item-content">
+                                        <h4 class="mt-0 mb-8 reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="200">6 Different Positions</h4>
+                                        <p class="m-0 text-sm reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="300">Each of these 16 types of cards will have 6 different positions each representing a different rarity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item">
+                                <div class="tiles-item-inner">
+                                    <!-- <div class="features-tiles-item-header">
+                                        <div class="features-tiles-item-image mb-12 reveal-from-right"
+                                            data-reveal-container=".tiles-item" data-reveal-delay="200"><img
+                                                src="images/feature-tile-icon-03.svg" alt="Feature tile icon 03"></div>
+                                    </div> -->
+                                    <div class="features-tiles-item-content">
+                                        <h4 class="mt-0 mb-8 reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="300">Chance Your Luck</h4>
+                                        <p class="m-0 text-sm reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="400">Hold a card that is more rare and have more chances for each airdrop entered into!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item">
+                                <div class="tiles-item-inner">
+                                    <!-- <div class="features-tiles-item-header">
+                                        <div class="features-tiles-item-image mb-12 reveal-from-right"
+                                            data-reveal-container=".tiles-item"><img
+                                                src="images/feature-tile-icon-04.svg" alt="Feature tile icon 04"></div>
+                                    </div> -->
+                                    <div class="features-tiles-item-content">
+                                        <h4 class="mt-0 mb-8 reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="100">You Can Win</h4>
+                                        <p class="m-0 text-sm reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="200">During the season there will be two ways to win each week.  We will have a weekly spotlighted match and a weekly high scorer.  Hold the card of the team who wins the spotlight matchup or is the high scorer and you will be entered into our airdrop!  It’s that simple </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item">
+                                <div class="tiles-item-inner">
+                                    <!-- <div class="features-tiles-item-header">
+                                        <div class="features-tiles-item-image mb-12 reveal-from-right"
+                                            data-reveal-container=".tiles-item" data-reveal-delay="100"><img
+                                                src="images/feature-tile-icon-05.svg" alt="Feature tile icon 05"></div>
+                                    </div> -->
+                                    <div class="features-tiles-item-content">
+                                        <h4 class="mt-0 mb-8 reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="200">Flexibility</h4>
+                                        <p class="m-0 text-sm reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="300">A pseudo-Latin text used in web design, layout, and
+                                            printing in place of things to emphasise design for previewing layouts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item">
+                                <div class="tiles-item-inner">
+                                    <!-- <div class="features-tiles-item-header">
+                                        <div class="features-tiles-item-image mb-12 reveal-from-right"
+                                            data-reveal-container=".tiles-item" data-reveal-delay="200"><img
+                                                src="images/feature-tile-icon-06.svg" alt="Feature tile icon 06"></div>
+                                    </div> -->
+                                    <div class="features-tiles-item-content">
+                                        <h4 class="mt-0 mb-8 reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="400">Flexibility</h4>
+                                        <p class="m-0 text-sm reveal-from-right" data-reveal-container=".tiles-item"
+                                            data-reveal-delay="400">A pseudo-Latin text used in web design, layout, and
+                                            printing in place of things to emphasise design for previewing layouts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section illustration-section-0">
+                <div class="container">
+                    <div class=" section-inner has-top-divider smooth-scroll" id="prizes">
+                        <div class="center-content">
+                            <div class="container-sm has-animations">
+                                <h2 class="mt-0 mb-20 inter reveal-from-bottom">Weekly Prizes &nbsp; 🎉</h2>
+                                <p class="mb-0 reveal-from-bottom">We will be giving back 97% of the mint proceeds to buy up NFTs as weekly prizes!  This means that upon sellout we will be distributing 490 ETH over 15 weeks of the season.  Each week we will have a budget of 24.5 ETH to buy and support the 16 teams in our league.  This means some weeks we will be giving away 170 unraced Zed horses and 6 SupDucks while others we will have 6 Bored Ape Kennel Clubs and 5 Gutter Rats.  You get the picture… this is going to be big!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features-split section illustration-section-05 smooth-scroll" id="cards">
+                <div class="container">
+                    <div class="features-split-inner section-inner">
+                        <div class="section-header center-content">
+                            <div class="container-xs">
+                                <h2 class="mt-0 mb-20 inter">Cards</h2>
+                               
+                                <p>◦ Whitelisted pre sale 9/21
+                                    ◦ Public sale 9/22
+                                    ◦ Instant reveal
+                                    ◦ .07 per card
+                                    ◦ 20 card max per transaction</p>
+                            </div>
+                        </div>
+                        <div class="split-wrap invert-mobile">
+                            <div class="split-item reveal-scale-up">
+                                <div class="split-item-content center-content-mobile">
+                                    <h3 class="mt-0 mb-16 inter">Head Coach</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="split-item-image split-item-image-fill is-3d illustration-element-03"><img
+                                        src="../assets/Card-Head Coach.png" class="w-80" alt="Features split image 01">
+                                </div>
+                            </div>
+                            <div class="split-item reveal-scale-up">
+                                <div class="split-item-content center-content-mobile">
+                                    <h3 class="mt-0 mb-16 inter">The Ape</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="split-item-image split-item-image-fill is-3d illustration-element-04"><img
+                                        src="../assets/Card-TE.png" class="w-80" alt="Features split image 02"></div>
+                            </div>
+                            <div class="split-item reveal-scale-up">
+                                <div class="split-item-content center-content-mobile">
+                                    <h3 class="mt-0 mb-16 inter">Kia QB</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="split-item-image split-item-image-fill is-3d illustration-element-05"><img
+                                        src="../assets/Graded-KIA-QB.png" class="w-80" 
+                                        alt="Features split image 03"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="roadmap section smooth-scroll" id="roadmap">
+                <div class="container">
+                    <div class="roadmap-inner section-inner has-top-divider" >
+                        <div class="center-content">
+                            <div class="container-xs">
+                                <h2 class="mt-0 mb-16 inter">Roadmap</h2>
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <video src="../assets/Final_Animation_1.mp4" class="mx-auto" autoplay muted loop></video>
+                        </div>
+                        <!-- <div class="timeline">
+                            <div class="timeline-wrap">
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-header tt-u mb-4 reveal-fade">November 2019</div>
+                                        <div class="timeline-item-content h4 m-0 reveal-from-side">Deployed a
+                                            high-quality first release and conducted a market validation test</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-header tt-u mb-4 reveal-fade">December 2019</div>
+                                        <div class="timeline-item-content h4 m-0 reveal-from-side">Deployed a
+                                            high-quality first release and conducted a market validation test</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-header tt-u mb-4 reveal-fade">January 2020</div>
+                                        <div class="timeline-item-content h4 m-0 reveal-from-side">Deployed a
+                                            high-quality first release and conducted a market validation test</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-header tt-u mb-4 reveal-fade">February 2019</div>
+                                        <div class="timeline-item-content h4 m-0 reveal-from-side">Deployed a
+                                            high-quality first release and conducted a market validation test</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-item-inner">
+                                        <div class="timeline-item-header tt-u mb-4 reveal-fade">March 2020</div>
+                                        <div class="timeline-item-content h4 m-0 reveal-from-side">Deployed a
+                                            high-quality first release and conducted a market validation test</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <section class="section illustration-section-5" id="league">
+                <div class="container">
+                    <div class="section-inner pt-0">
+                        <div class="center-content">
+                            <div class="container-xs">
+                                <h2 class="mt-0 mb-16 inter">League</h2>
+                                <p class="mb-0">The league is made up of 16 of some of the best NFT projects around!  Their respective community leaders have given their time to manage, represent, and bring home the ship.  Meet the teams below.  Check back here season long for their current lineup and matchups.</p>
+                            </div>
+                        </div>
+                       
+                     
+                    </div>
+                </div>
+            </section>
+            <section class="pricing section illustration-section-05" id="front">
+                <div class="container">
+                    <div class="pricing-inner section-inner">
+                        <div class="section-header center-content ">
+                            <div class="container-xs">
+                                <h2 class="m-0 inter">Front Office</h2>
+                            </div>
+                        </div>
+                        <div class="tiles-wrap">
+                            <div class="tiles-item reveal-scale-up">
+                                <div class="tiles-item-inner center-content">
+                                    <div class="team-item-header">
+                                        <div class="team-item-image mb-24"><img
+                                                src="../assets/bunchu.png" alt="Team member 01" width="180"
+                                                height="180"></div>
+                                    </div>
+                                    <div class="team-item-content">
+                                        <h5 class="team-item-name mt-0 mb-4">Bunchu</h5>
+                                        <div class="team-item-role text-xs fw-500 mb-8">Co-Founder</div>
+                                        <p class="m-0 text-sm">He was introduced to Bitcoin and Ethereum in 2017 via his sports betting habits and now he is a full time NFT degenerate. Bunchu is a co-founder of dGen.Network, co-host of The Mint Condition and REKT Podcasts, and a founding member of NFT RedZone.  He has been playing fantasy football for over 14 years and is an extremely dedicated fantasy manager.  Bunchu is ready to take team dGen to the ship!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item reveal-scale-up" data-reveal-delay="200">
+                                <div class="tiles-item-inner center-content">
+                                    <div class="team-item-header">
+                                        <div class="team-item-image mb-24"><img
+                                                src="../assets/premium.png" alt="Team member 02" width="180"
+                                                height="180"></div>
+                                    </div>
+                                    <div class="team-item-content">
+                                        <h5 class="team-item-name mt-0 mb-4">Premium Carrots </h5>
+                                        <div class="team-item-role text-xs fw-500 mb-8">Co-Founder</div>
+                                        <p class="m-0 text-sm">Manager of team Riot Racers and looking at an uphill battle this season.  In a former life he was an Actuary/Data Scientist having worked in Insurance and Banking industries now turned full time degenerate.  He has been wagering on sports and playing in Fantasy Football for over 15 years and currently manages 6 teams (5 dynasties and 1 season long).  A VP at Riot Racers, content contributor for dGen.Network, and co-founder of NFT RedZone PC is ready to bring his skills to his team and to this project!    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles-item reveal-scale-up" data-reveal-delay="400">
+                                <div class="tiles-item-inner center-content">
+                                    <div class="team-item-header">
+                                        <div class="team-item-image mb-24"><img
+                                                src="../assets/zwingli.png" alt="Team member 03" width="180"
+                                                height="180"></div>
+                                    </div>
+                                    <div class="team-item-content">
+                                        <h5 class="team-item-name mt-0 mb-4">Captain Zwingli</h5>
+                                        <div class="team-item-role text-xs fw-500 mb-8">Co-Founder</div>
+                                        <p class="m-0 text-sm">Captain is a serial entrepreneur in the traditional business world, he entered the NFT space in January of ‘21 and quickly became passionate about creating, building and connecting. In just a few months time Captain has created the Ape & Pony Show, co-founded StartApes and the dGen Network. An avid sports fan he has played fantasy football at a high level for a couple of decades and high stakes daily fantasy for the last 10 years. Captain is honored to be building NFT RedZone with aspirations of this project becoming one of the great connectors of communities in the NFT space.</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cta section center-content-mobile">
+                <div class="container">
+                    <div class="cta-inner section-inner cta-split has-top-divider has-bottom-divider">
+                        <div class="cta-slogan reveal-from-left">
+                            <h3 class="m-0">Nisi porta lorem mollis aliquam ut.</h3>
+                        </div>
+                        <div class="cta-action reveal-from-right"><a class="button button-primary button-wide-mobile"
+                                href="#">Get started</a></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer center-content-mobile illustration-section-08 reveal-from-bottom"
+            data-reveal-offset="0">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="footer-top space-between text-xxs">
+                        <div class="brand"><a href="index.html"><img src="../assets/Logo.png" alt="Twist"></a></div>
+                        <div class="footer-social">
+                            <ul class="list-reset">
+                                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <title>Facebook</title>
+                                            <path
+                                                d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" />
+                                        </svg></a></li>
+                                <li><a href="https://twitter.com/NFTRedZone"><svg width="16" height="16" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <title>Twitter</title>
+                                            <path
+                                                d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" />
+                                        </svg></a></li>
+                                <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <title>Instagram</title>
+                                            <g>
+                                                <circle cx="12.145" cy="3.892" r="1" />
+                                                <path
+                                                    d="M8 12c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
+                                                <path
+                                                    d="M12 16H4c-2.056 0-4-1.944-4-4V4c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zM4 2c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2V4c0-.935-1.065-2-2-2H4z" />
+                                            </g>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom space-between text-xxs invert-order-desktop">
+                        <nav class="footer-nav">
+                            <ul class="list-reset">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">FAQ's</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer-copyright">&copy; 2021 NFTRedZone, All rights reserved</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  
+</body>
+
+</html>
